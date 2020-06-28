@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "100457886648",
+    "firebase_url": "https://elevatorcontrolpanelapplicatio.firebaseio.com",
+    "project_id": "elevatorcontrolpanelapplicatio",
+    "storage_bucket": "elevatorcontrolpanelapplicatio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100457886648:android:0254294bb8dc2278ee554d",
+        "android_client_info": {
+          "package_name": "adu.ac.ae.elevatorcontrolpanelapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "100457886648-o3s18vgcp2ntht61qb0sl2mj6hhpai6d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "adu.ac.ae.elevatorcontrolpanelapplication",
+            "certificate_hash": "af2ef9ce72ec4b3d7b10d06dafa64802966aa471"
+          }
+        },
+        {
+          "client_id": "100457886648-5mfvekgevqjd0mkbu94463o09bei461o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbn1HvoKtLaDfSXZ49upVdeuu0JTmNK3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100457886648-5mfvekgevqjd0mkbu94463o09bei461o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
