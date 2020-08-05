@@ -22,7 +22,7 @@
     <a href="https://github.com/haitham-chabayta/Elevator-control-panel-app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://youtu.be/LGrs2qq4VDg/">View Demo</a>
+    <a href="https://github.com/haitham-chabayta/Elevator-control-panel-app/blob/master/Project_Report.pdf">View Demo</a>
     ·
     <a href="https://github.com/haitham-chabayta/Elevator-control-panel-app/issues">Report Bug</a>
     ·
