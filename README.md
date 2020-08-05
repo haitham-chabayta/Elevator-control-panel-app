@@ -10,23 +10,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/haitham-chabayta/blind-spot-detection">
+  <a href="https://github.com/haitham-chabayta/Elevator-control-panel-app">
      <img src="images/logo.png" alt="Logo" width="80" height="80">
  </a>
 
-  <h3 align="center">Blind spot object detection system</h3>
+  <h3 align="center">E-Lift</h3>
 
   <p align="center">
-    A system that detects objects in the driver's blind spot and alerts the user of the threat through an ionic application.
+    An android application that allows users to press elevator buttons without any physical contact.
     <br />
-    <a href="https://github.com/haitham-chabayta/blind-spot-detection"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/haitham-chabayta/Elevator-control-panel-app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://youtu.be/LGrs2qq4VDg/">View Demo</a>
     ·
-    <a href="https://github.com/haitham-chabayta/blind-spot-detection/issues">Report Bug</a>
+    <a href="https://github.com/haitham-chabayta/Elevator-control-panel-app/issues">Report Bug</a>
     ·
-    <a href="https://github.com/haitham-chabayta/blind-spot-detection/issues">Request Feature</a>
+    <a href="https://github.com/haitham-chabayta/Elevator-control-panel-app/issues">Request Feature</a>
   </p>
 </p>
 
@@ -51,31 +51,31 @@
 ## About The Project
 
 [![Screen Shot][product-screenshot]](https://github.com/haitham-chabayta/blind-spot-detection/)
+[![Screen Shot 2][product-screenshot-2]](https://github.com/haitham-chabayta/blind-spot-detection/)
 
-E-Lift is an Android native application that allows users to press elevator buttons without any physical contact. Users scan an elevator Qr code to display the elevator's control panel. The application contorls the operation of servo motors connected to a Raspberry pi to press the buttons.
+E-Lift is an Android native application that allows users to press elevator buttons without any physical contact. Users scan an elevator Qr code to display the elevator's control panel. The application contorls the operation of servo motors connected to a Raspberry pi by alerting the state of the button pressed in the database which is continuously monitored by the Raspberry Pi. The servo motors are used to produce a pushing mechanism to press the elevator buttons.
 
 A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
 ### Features
-* Mute button for the alert sound
-* Visual representation to threats in blind spots
-* Ability to turn off detection when moving below a certain speed.
-
+* Qr Code Scanner
+* Dynamic contorl panel display on the app depending on the number of floors.
 
 ### Built With
-* [Arduino IDE](https://www.arduino.cc/en/main/software)
-* [Ionic framework](https://ionicframework.com/)
+* [Raspberry pi](https://www.raspberrypi.org/)
+* [Android studio](https://developer.android.com/studio)
+* [Google mobile vision](https://developers.google.com/vision)
 
 ## Getting Started
 
 
 ### Prerequisites
 
-*3 Arduino microcontroller 
+*Raspberry pi model 3
 
-*2 Ultrasonic sensors
+*Servo Motors
 
-*Arduino IDE / Download from : https://www.arduino.cc/en/main/software
+*Andriod studio and Java JDK 8
 
 *Git / Check if you have Git using:
 ```sh
@@ -83,9 +83,15 @@ npm --version
 ```
 If not install git from https://git-scm.com/downloads
 
-*Andriod studio and Java JDK 8 if you have an android device
+*Python3 on the Raspberry pi
+```sh
+sudo apt-get install python3.6
+```
 
-*Xcode 7 or higher and IOS 9 if you have an IOS device
+*Python-firebase on the Raspberry pi
+```sh
+sudo pip install python-firebase
+```
 
 
 
@@ -93,13 +99,15 @@ If not install git from https://git-scm.com/downloads
 
 1. Clone the Repo 
 ```sh
-git clone https://github.com/haitham-chabayta/blind-spot-detection.git
+git clone https://github.com/haitham-chabayta/Elevator-control-panel-app.git
 ```
-2. Import the ardunio codes from the repo into arduino IDE and install the codes on the arduinos
+2. Connect the servo motors to the Raspberry pi GPIO pins
 
-3. Connect the ultrasonic sensors to the arduinos as suitable
+3. Run the python code on the Raspberry pi
 
-4. Install the ionic app on your phone following the guide at: https://ionicframework.com/docs/v3/intro/deploying/
+4. Import the application project on Android studio
+
+5.Bulid the APK and Install it on your Android device
 
 
 <!-- CONTRIBUTING -->
@@ -128,19 +136,20 @@ LinkedIn: https://www.linkedin.com/in/haitham-chabayta-0654681b1/
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [GitHub Pages](https://pages.github.com)
 * [Firebase](https://firebase.google.com/)
-* [Ionic documentation](https://ionicframework.com/docs)
-* [Arduino WIFI library](https://www.arduino.cc/en/Reference/WiFi)
+* [Mobile vision Barcode API](https://developers.google.com/vision/android/barcodes-overview)
+* [Python-firebase](https://pypi.org/project/python-firebase/)
 
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/haitham-chabayta/blind-spot-detection.svg?style=flat-square
-[contributors-url]: https://github.com/haitham-chabayta/blind-spot-detection/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/haitham-chabayta/blind-spot-detection.svg?style=flat-square
-[forks-url]: https://github.com/haitham-chabayta/blind-spot-detection/network/members
-[stars-shield]: https://img.shields.io/github/stars/haitham-chabayta/blind-spot-detection.svg?style=flat-square
-[stars-url]: https://github.com/haitham-chabayta/blind-spot-detection/stargazers
-[issues-shield]: https://img.shields.io/github/issues/haitham-chabayta/blind-spot-detection.svg?style=flat-square
-[issues-url]: https://github.com/haitham-chabayta/blind-spot-detection/issues
+[contributors-shield]: https://img.shields.io/github/contributors/haitham-chabayta/Elevator-control-panel-app.svg?style=flat-square
+[contributors-url]: https://github.com/haitham-chabayta/Elevator-control-panel-app/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/haitham-chabayta/Elevator-control-panel-app.svg?style=flat-square
+[forks-url]: https://github.com/haitham-chabayta/Elevator-control-panel-app/network/members
+[stars-shield]: https://img.shields.io/github/stars/haitham-chabayta/Elevator-control-panel-app.svg?style=flat-square
+[stars-url]: https://github.com/haitham-chabayta/Elevator-control-panel-app/stargazers
+[issues-shield]: https://img.shields.io/github/issues/haitham-chabayta/Elevator-control-panel-app.svg?style=flat-square
+[issues-url]: https://github.com/haitham-chabayta/Elevator-control-panel-app/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/haitham-chabayta-0654681b1/
 [product-screenshot]: images/screenshot.png
+[product-screenshot-2]: images/screenshot-2.png
