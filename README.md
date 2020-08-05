@@ -67,7 +67,7 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 * [Google mobile vision](https://developers.google.com/vision)
 
 ## Getting Started
-
+Here is the list of the prerequisites you need and how to install the system to run it on your own
 
 ### Prerequisites
 
