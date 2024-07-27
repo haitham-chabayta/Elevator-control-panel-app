@@ -3,7 +3,7 @@ from time import sleep
 import RPi.GPIO as GPIO
 from firebase import firebase
 
-ID = 2266
+ID = 2266 
 elevatorIdTable = {2266 : 'ElevatorNumberOne', 5544 : 'ElevatorNumberTwo',  4433 : 'ElevatorNumberThree'}
 
 firebase = firebase.FirebaseApplication("https://elevatorcontrolpanelapplicatio.firebaseio.com/", None)
